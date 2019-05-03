@@ -40,7 +40,7 @@ Process{
             }
             
             # Do download for each item found with the FileExtension
-            CD $PathToDirectory
+            Set-Location $PathToDirectory
             $DirectoryOfFiles = $PathToDirectory = Get-ChildItem
 		        FOREACH ($Item in $DirectoryOfFiles){
 			      Write-Host "Item is named: $Item"
