@@ -42,7 +42,7 @@ Process{
             Rename-Item -Path "$Item" "$filenew" -Force
             write-host "Item is now named $filenew"
 			}
-		  }
+	}
 END {
 	# Stop Stopwatch and report duration and completed status to screen and logfile.
 	$Stopwatch.stop()
