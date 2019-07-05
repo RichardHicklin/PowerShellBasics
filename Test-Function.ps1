@@ -21,6 +21,8 @@ Process{
 		Write-Verbose "Path to folder: $PathToDirectory,"
 		Write-Verbose "Files: $Files"
 		Write-Verbose "File Extension: $RenameExtValue"
+		
+	cd $PathToDirectory	
 
         # Setup Folder Structure
         IF(!(Test-Path -Path "$PathToDirectory" )){
